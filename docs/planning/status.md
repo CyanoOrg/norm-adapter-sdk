@@ -2,7 +2,12 @@
 
 ## Resume here
 
-- Stage: Phase 1 skeleton complete (2026-10-23). The repository exists under
+- Stage: Phase 1 complete (2026-10-24). `norm-adapter-engine` `0.1.0`
+  is published on crates.io from the exact tagged candidate `34ef0f5`
+  (signed tag `v0.1.0`; draft GitHub Release awaiting maintainer
+  publication). The maintainer confirmed the crate name
+  `norm-adapter-engine` over the single-name alternative (2026-10-24).
+  Phase 1 skeleton had landed 2026-10-23: The repository exists under
   `CyanoOrg/norm-adapter-sdk` (public since 2026-10-24: free-plan private
   repositories cannot carry rulesets, so the maintainer approved flipping
   public and arming governance in one motion),
@@ -15,10 +20,10 @@
   golden output through a test-only DSH identity, and `cargo fmt`,
   `cargo clippy --workspace --all-targets -- -D warnings`, `cargo test`, and
   `cargo doc --workspace --no-deps` all pass on the initial extraction.
-- Next (Phase 1 remaining): adapt the family CI gate (`rust-quality` job
-  shape from pi-norm-spec `ci.yml`); add cross-identity golden fixtures
-  proving both known hosts' identity sets render byte-identically to each
-  adapter's current output; organization-team access and the D014-style
+- Phase 1 closure evidence: the family CI gate (`rust-quality`) is green
+  on every push; cross-identity golden fixtures lock byte-for-byte parity
+  with both adapters' current implementations (19 tests); organization-team
+  access and the D014-style
   rulesets are live (2026-10-24): `main-integrity`, `main-quality`,
   `main-review` (review-layer bypass for `norm-release-managers` only), and
   `release-tag-immutable`, all active with no other bypass; maintainer naming review of the
