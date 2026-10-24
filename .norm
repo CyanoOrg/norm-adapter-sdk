@@ -1,0 +1,42 @@
+---
+metadata:
+  layer: root
+  scope: ./
+  version: "1.0"
+  description: "norm-adapter-sdk repository governance"
+---
+
+# norm-adapter-sdk governance
+
+## required_directories
+
+- `crates/`
+- `docs/`
+- `.github/`
+
+## agent_rules
+
+### update_order
+
+1. Record a decision before changing the extraction boundary or public API.
+2. Read `docs/decisions.md` and `docs/planning/status.md` before proposing
+   scope changes.
+3. Run the full gate set (`cargo fmt --check`, `cargo clippy --workspace
+   --all-targets -- -D warnings`, `cargo test --workspace`, `cargo doc
+   --workspace --no-deps`) before reporting work complete.
+
+### determinism
+
+- Structured outputs are versioned and byte-deterministic; never truncate,
+   reorder, or summarize to fit a size bound — fail instead.
+
+### identity_parameterization
+
+- Host variance enters only through `AdapterIdentity`. Any new host-specific
+  string outside that struct is a scope violation requiring a decision
+  record.
+
+## readme_language_sync
+
+- README.md is primary; README.zh-CN.md carries the same sections in
+  Chinese and must be updated in the same commit.
