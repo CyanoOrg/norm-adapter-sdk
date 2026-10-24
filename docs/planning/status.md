@@ -3,7 +3,9 @@
 ## Resume here
 
 - Stage: Phase 1 skeleton complete (2026-10-23). The repository exists under
-  `CyanoOrg/norm-adapter-sdk` (private until `0.1.0` publication review),
+  `CyanoOrg/norm-adapter-sdk` (public since 2026-10-24: free-plan private
+  repositories cannot carry rulesets, so the maintainer approved flipping
+  public and arming governance in one motion),
   and `norm-adapter-engine` `0.1.0` builds green with the four modules
   extracted from dsh-norm-spec `0.2.1`, identity-parameterized per D001:
   `norm_protocol.rs` (copied verbatim — already host-neutral),
@@ -17,7 +19,9 @@
   shape from pi-norm-spec `ci.yml`); add cross-identity golden fixtures
   proving both known hosts' identity sets render byte-identically to each
   adapter's current output; organization-team access and the D014-style
-  rulesets before any collaborator push; maintainer naming review of the
+  rulesets are live (2026-10-24): `main-integrity`, `main-quality`,
+  `main-review` (review-layer bypass for `norm-release-managers` only), and
+  `release-tag-immutable`, all active with no other bypass; maintainer naming review of the
   repository and crate labels before the first crates.io publication.
 - Phase 2 (pi-norm-spec swap) and Phase 3 (multi-target and layout-index
   adoption) stay sequenced by pi-norm-spec
