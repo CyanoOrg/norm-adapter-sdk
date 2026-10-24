@@ -1,0 +1,20 @@
+# Security Policy
+
+## Supported versions
+
+Before the first stable release, security fixes land on `main` and the latest
+published release. Older pre-releases are not supported.
+
+## Reporting a vulnerability
+
+Do not open a public issue for a suspected vulnerability. Use GitHub private
+vulnerability reporting at
+`https://github.com/CyanoOrg/norm-adapter-sdk/security/advisories/new`. If
+that channel is unavailable, email `bravetwo@163.com` with the subject
+`norm-adapter-sdk security report`.
+
+Include the affected revision, the consuming adapter and its norm-spec pin,
+impact, a minimal reproduction, and any proposed mitigation. Remove real
+credentials and private project data from examples. We aim to acknowledge
+reports within five business days and will coordinate disclosure after a fix
+or mitigation is available.
